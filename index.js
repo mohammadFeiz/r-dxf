@@ -100,18 +100,3 @@ var getDXF = function(list){
   var blob = new Blob([dxfText], { type: "text/plain" });
   saveAs(blob, filename + ".dxf");
 }
-
-
-function msf(){
-  getDXF([
-    {x1:-100,y1:-100,x2:100,y2:-100,type:'line'},
-    {x1:100,y1:-100,x2:100,y2:100,type:'line'},
-    {x1:100,y1:100,x2:-100,y2:100,type:'line'},
-    {x1:-100,y1:100,x2:-100,y2:-100,type:'line'},
-    {x:0,y:0,radius:100,type:'circle'},
-    {start:[-120,-120],end:[120,120],type:'rectangle'},
-    {x:0,y:0,radius:50,startAngle:0,endAngle:90,type:'arc'},
-    
-  ])
-}
-msf()
