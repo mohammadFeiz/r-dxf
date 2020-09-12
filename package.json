@@ -1,7 +1,6 @@
 {
   "name": "r-dxf",
   "version": "1.0.0",
-  "private": true,
   "main":"index.js",
   "dependencies": {
     "file-saver": "^2.0.2"
