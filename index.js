@@ -100,3 +100,5 @@ var getDXF = function(list){
   var blob = new Blob([dxfText], { type: "text/plain" });
   saveAs(blob, filename + ".dxf");
 }
+
+export default getDXF;
